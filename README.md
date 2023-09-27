@@ -1,7 +1,7 @@
 # Teste de caixa branca
 
 ## Observe o código no slide 28 da aula com conteúdo de teste de caixa branca;
-
+[![N|Code](https://github.com/douglads/teste-caixa-branca/blob/main/code.JPG?raw=true)](https://github.com/douglads/teste-caixa-branca)
 ## Aponte os erros que podem conter no código;
 As variaveis nome e result não fazem sentido ficarem fora dos escopos das funções
 A instrução SQL não precisa necessariamente ser quebrada varias vezes e alterado seu valor.
