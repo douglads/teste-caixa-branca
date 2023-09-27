@@ -12,12 +12,12 @@ Nos catchs os erros não são tratados
 - ### A DOCUMENTAÇÃO FOI DESCRITA NO CÓDIGO?
     Não, ele não descreve o que ocorre no código quase não há comentários
 - ### AS VARIÁVEIS E CONSTANTES POSSUEM BOA NOMENCLATURA?
-    Sim, ao meu ver elas descrevem bem o código.
+    As variáveis e constantes não possuem uma boa nomenclatura. Por exemplo, a variável "conn" poderia ser renomeada para "connection" para tornar seu propósito mais claro.
 - ### EXISTEM LEGIBILIDADE E ORGANIZAÇÃO NO CÓDIGO?
-    Sim, o código esta bem descrito e legivel
+    Sim, o código esta bem descrito e legivel, porém, a ressalvas é recomendado utilizar indentação adequada, separar as instruções SQL em linhas diferentes e adicionar espaços entre operadores e palavras-chave.
 - ### TODOS OS NULLPOINTERS FORAM TRATADOS?
-    Os try catch não estão sendo tratados por tanto os null pointer podem haver erros
+    Não há tratamento de null pointers no código fornecido. Seria necessário adicionar verificações para evitar possíveis exceções.
 - ### A ARQUITETURA UTILIZADA FOI DEVIDAMENTE RESPEITADA?
-    Não, pois, o código faltam coisas descritas logo a cima
+    Não, pois, aqui só analisamos uma class e não o projeto como um todo.
 - ### AS CONEXÕES UTILIZADAS FORAM FECHADAS?
-    Sim, todas forão
+    As conexões utilizadas não estão sendo fechadas corretamente. É recomendado utilizar blocos try-finally para garantir o fechamento adequado das conexões.
