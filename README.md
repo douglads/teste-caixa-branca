@@ -21,3 +21,25 @@ Nos catchs os erros não são tratados
     Não, pois, aqui só analisamos uma class e não o projeto como um todo.
 - ### AS CONEXÕES UTILIZADAS FORAM FECHADAS?
     As conexões utilizadas não estão sendo fechadas corretamente. É recomendado utilizar blocos try-finally para garantir o fechamento adequado das conexões.
+
+# ETAPA - 2
+## Código númerado
+[![N|Code](https://github.com/douglads/teste-caixa-branca/blob/main/code.png?raw=true)](https://github.com/douglads/teste-caixa-branca)
+
+## Grafo
+[![N|Code](https://github.com/douglads/teste-caixa-branca/blob/ETAPA-2/grafo.png?raw=true)](https://github.com/douglads/teste-caixa-branca)
+## Complexidade ciclomatica
+M = E - N + 2P
+142 - 152 + 2*10 = 10
+
+## Caminhos
+ 1 - 2 - 3 - 4 - 5 - 11 - 12 - 13 - 19 - 20
+ 1 - 2 - 3 - 4 - 5 - 11 - 12 - 13 - 14 - 15 - 16 - 20
+ 1 - 2 - 3 - 4 - 5 - 11 - 12 - 13 - 14 - 15 - 16 - 19 - 20
+ 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 11 - 12 - 13 - 19 - 20
+ 1 - 2 - 3 - 4 - 5 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 20
+ 1 - 2 - 3 - 4 - 5 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 19 - 20
+ 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 11 - 12 - 13 - 14 - 15 - 16 - 20
+ 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 11 - 12 - 13 - 14 - 15 - 16 - 19 - 20
+ 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 20
+ 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 19 - 20
