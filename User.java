@@ -8,36 +8,36 @@ import java.sql.Statement;
 public class User {
     
     public Connection conectarBD(){
-        Connection conn = null;
-        try {
-            Class.forName("com.mysql.Driver.Manager").newInstance();
-            String url = "jdbc.mysql://127.0.0.1/test?user=lopes&password=123";
-            conn = DriverManager.getConnection(url);
+        /*5*/Connection conn = null;
+        /*6*/try {
+            /*7*/Class.forName("com.mysql.Driver.Manager").newInstance();
+            /*8*/String url = "jdbc.mysql://127.0.0.1/test?user=lopes&password=123";
+            /*9*/conn = DriverManager.getConnection(url);
         } 
-        catch (Exception e) {
+        /*10*/catch (Exception e) {
         }
-        return conn;
+        /*11*/return conn;
     }
 
-    public String nome = "";
-    public boolean result = false;
+    /*1*/public String nome = "";
+    /*2*/public boolean result = false;
 
     public boolean verificarUsuario(String login, String senha){
-        String sql = "";
-        Connection conn = conectarBD();
+        /*3*/String sql = "";
+        /*4*/Connection conn = conectarBD();
         //INSTRUÇÃO SQL
-        sql += "select nome from usuarios ";
-        sql += "where login ='" + login + "' ";
-        sql += "and senha ='" + senha + "';";
-        try {
-            Statement st = conn.createStatement();
-            ResultSet rs = st.executeQuery(sql);
-            if (rs.next()) {
-                result = true;
-                nome = rs.getString(nome);
+        /*12*/sql += "select nome from usuarios ";
+        /*12*/sql += "where login ='" + login + "' ";
+        /*12*/sql += "and senha ='" + senha + "';";
+        /*13*/try {
+            /*14*/Statement st = conn.createStatement();
+            /*14*/ResultSet rs = st.executeQuery(sql);
+            /*15*/if (rs.next()) {
+                /*16*/result = true;
+                /*17*/nome = rs.getString(nome);
             }
-        } catch (Exception e) {
+        } /*18*/catch (Exception e) {
         }
-        return result;
+        /*19*/return result;
     }
 }//fim da class
