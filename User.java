@@ -31,13 +31,13 @@ public class User {
         /*12*/sql += "and senha ='" + senha + "';";
         /*13*/try {
             /*14*/Statement st = conn.createStatement();
-            /*14*/ResultSet rs = st.executeQuery(sql);
-            /*15*/if (rs.next()) {
-                /*16*/result = true;
-                /*17*/nome = rs.getString(nome);
+            /*15*/ResultSet rs = st.executeQuery(sql);
+            /*16*/if (rs.next()) {
+                /*17*/result = true;
+                /*18*/nome = rs.getString(nome);
             }
-        } /*18*/catch (Exception e) {
+        } /*19*/catch (Exception e) {
         }
-        /*19*/return result;
+        /*20*/return result;
     }
 }//fim da class
